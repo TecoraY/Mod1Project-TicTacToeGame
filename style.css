@@ -1,0 +1,42 @@
+/* style of the grid to be 3 by 3.*/
+
+.title{
+    color:goldenrod;
+    text-align: center;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 20px;
+
+}
+.tiles{
+    border: solid black;
+    display: flex;
+}
+#box1,#box2,#box3{
+    border-top: none;
+}
+#box1, #box4, #box7{
+    border-left: none;
+}
+#box7, #box8, #box9{
+    border-bottom:none;
+}
+#box3, #box6, #box9{
+    border-right: none;
+}
+.o,.o2,.o3,.o4,.o5,.o6,.o7,.o8,.o9{
+    visibility: hidden;
+}
+.x,.x2,.x3,.x4,.x5,.x6,.x7,.x8,.x9{
+    visibility: hidden;
+}
+.initiateX{
+    visibility: visible;
+}
+.initiateO{
+    visibility:visible
+}
+/* hide the image of x and O in the grid behind a blank box?*/
