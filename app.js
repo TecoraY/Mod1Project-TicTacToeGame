@@ -90,13 +90,58 @@
         //else if player 2 gets 3 ina row, diaganol, or column
             //then  move to score function
         //else tie 
-    
+        //will try to make a loop for each index with X or O. pulling from each individual box. 
+        const imgx ="https://th.bing.com/th/id/R.ec021608e851e893da1e8531fa498247?rik=N8F0Eo0aBDmS0A&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fX-Letter-PNG-Image.png&ehk=YJKm7xXwZzGrosZTK5Psk5jGrO46tKykqARB309XEAQ%3d&risl=&pid=ImgRaw&r=0"
+        const imgo= "https://th.bing.com/th/id/R.b85f668ba966a277c5ad5ea977a3fab2?rik=XDE7DA6wO0ORZg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fletter-o-png-letter-o-capital-letter-alphabet-abc-gold-723.png&ehk=pjFwNzQKtd4VZGCkIOPPUy0UcNgIveDC5lqYIvVxQLA%3d&risl=&pid=ImgRaw&r=0"
+        //let x= imgx
+        //let o= imgo
+        const b1 =document.querySelector(".x").value;
+        const b2 =document.querySelector(".x2").value;
+        const b3 =document.querySelector(".x3").value;
+        const winner= 'you have won';
+
+        if ((b1=== imgx)&& (b2=== imgx) &&(b3=== imgx)){
+         console.log(winner)
+        }
+        
+        
 
 
+        
+        
+        /*const cellElements=document.querySelectorAll(".tiles")
+        const winCombos=[
+            [0,1,2],
+            [3,4,5],
+            [6,7,8],
+            [0,3,6],
+            [1,4,7],
+            [2,5,8],
+            [0,4,8],
+            [2,4,6],
+        ]
+       function winResults(){
+            let roundWon=false
+            for(let i=0; i<8; i++){
+                const winningCombinations= winCombos[i];
+                const a= cellElements[winCombos[0]];
+                const b= cellElements[winCombos[1]];
+                const c= cellElements[winCombos[2]];
+                    if ( a==="" || b==="" || c===""){
+                        continue;
+                    }
+                    if(a===b && b===c){
+                        roundWon=true;
+                    }
 
+            }
+        }
+        if (winResults(true)){
+            console.log('winner')
+        }*/
 
-
-
+     
+        
 
 
     //score to populate.

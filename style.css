@@ -28,15 +28,15 @@
     border-right: none;
 }
 .o,.o2,.o3,.o4,.o5,.o6,.o7,.o8,.o9{
-    visibility: hidden;
+    display: none;
 }
 .x,.x2,.x3,.x4,.x5,.x6,.x7,.x8,.x9{
-    visibility: hidden;
+    display: none;
 }
 .initiateX{
-    visibility: visible;
+    display: unset ;
 }
 .initiateO{
-    visibility:visible
+    display: unset;
 }
 /* hide the image of x and O in the grid behind a blank box?*/
