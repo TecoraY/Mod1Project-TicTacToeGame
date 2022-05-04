@@ -81,20 +81,25 @@ function winFunc() {
  
     // Setting DOM to all boxes or input field
     
-    let btnX1 = this.document.activeElement.getAttribute("btnx1");
-    let btnX2 = this.document.activeElement.getAttribute("btnx2");
-    let btnX3 = this.document.activeElement.getAttribute("btnx3");
+    let box1 = document.getElementById("box1");
+    let box2 = document.getElementById("box2");
+    let box3 = document.getElementById("box3");
    /* let b4 = document.getElementById("b4").value;
     let b5 = document.getElementById("b5").value;
     let b6 = document.getElementById("b6").value;
     let b7 = document.getElementById("b7").value;
     let b8 = document.getElementById("b8").value;
     let b9 = document.getElementById("b9").value;*/
- 
-    if ((btnX1)==(btnX2)&& (btnX2)==(btnX3)){
-        console.log("winner");
+    
+   if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
+       console.log("winner")
+   }
+} 
+    /* if (btnX1==btnX2){
+        console.log("winner")
     }
-}
+}*/
+
 
 
 
