@@ -75,7 +75,7 @@
         let pickO= document.querySelector('.o9')
         pickO.classList.toggle('initiateO')
     }
-
+//make the function call to each index and read if a class for initiate O or X was populated in the window. then from there run through win possibles. 
     const xBox1=document.querySelector(".writeX")
     const xBox2=document.querySelector(".writeX2")
     const xBox3=document.querySelector(".writeX3")
