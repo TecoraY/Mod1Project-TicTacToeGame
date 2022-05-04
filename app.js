@@ -75,31 +75,51 @@
         let pickO= document.querySelector('.o9')
         pickO.classList.toggle('initiateO')
     }
-//make the function call to each index and read if a class for initiate O or X was populated in the window. then from there run through win possibles. 
 
-const grid= document.querySelectorAll(".tiles")
 //define board as an array so that each index can be read for placement of X or O
-const board= Array(grid.length)
-//set the inside of each tile in the grid to null so it will be filled with space essentially. 
-//boardState.fill(null);
+function winFunc() {
+ 
+    // Setting DOM to all boxes or input field
+    
+    let btnX1 = this.document.activeElement.getAttribute("btnx1");
+    let btnX2 = this.document.activeElement.getAttribute("btnx2");
+    let btnX3 = this.document.activeElement.getAttribute("btnx3");
+   /* let b4 = document.getElementById("b4").value;
+    let b5 = document.getElementById("b5").value;
+    let b6 = document.getElementById("b6").value;
+    let b7 = document.getElementById("b7").value;
+    let b8 = document.getElementById("b8").value;
+    let b9 = document.getElementById("b9").value;*/
+ 
+    if ((btnX1)==(btnX2)&& (btnX2)==(btnX3)){
+        console.log("winner");
+    }
+}
 
-//define O and X
-const oMark= "O"
-const xMark= "X"
-console.log("hello")
-winningOptions()
+
+
+
+
+
+
+
+    //define O and X
+const oMark= "O";
+const xMark= "X";
+console.log("hello");
+/*winningOptions();
 
 function winningOptions(){
-    const xBox1=document.querySelector(".writeX")
-    const xBox2=document.querySelector(".writeX2")
-    const xBox3=document.querySelector(".writeX3")
-    let a=xBox1
-    let b=xBox2
-    let c=xBox3
-        if (a==="X" && b==="X" && c==="X")
-        console.log("winner")
-    
-}
+    const xBox1=document.querySelector(".writeX");
+    const xBox2=document.querySelector(".writeX2");
+    const xBox3=document.querySelector(".writeX3");
+    let a=xBox1;
+    let b=xBox2;
+    let c=xBox3;
+        if (a==="X" && b==="X" && c==="X"){
+        console.log("winner");
+        }
+}*/
 
     
 /////--------------------------------------------------------------------------------------------------------------------------------------------------//////
