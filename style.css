@@ -27,6 +27,12 @@
 #box3, #box6, #box9{
     border-right: none;
 }
+.writeX, .writeX2, .writeX3{
+    display:none;
+}
+.writeO,.writeO2,.writeO3{
+    display:none;
+}
 .o,.o2,.o3,.o4,.o5,.o6,.o7,.o8,.o9{
     display: none;
 }
