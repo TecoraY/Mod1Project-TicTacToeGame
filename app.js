@@ -76,17 +76,29 @@
         pickO.classList.toggle('initiateO')
     }
 //make the function call to each index and read if a class for initiate O or X was populated in the window. then from there run through win possibles. 
+
+const grid= document.querySelectorAll(".tiles")
+//define board as an array so that each index can be read for placement of X or O
+const board= Array(grid.length)
+//set the inside of each tile in the grid to null so it will be filled with space essentially. 
+//boardState.fill(null);
+
+//define O and X
+const oMark= "O"
+const xMark= "X"
+console.log("hello")
+winningOptions()
+
+function winningOptions(){
     const xBox1=document.querySelector(".writeX")
     const xBox2=document.querySelector(".writeX2")
     const xBox3=document.querySelector(".writeX3")
-    
-    function winningOptions(){
     let a=xBox1
     let b=xBox2
     let c=xBox3
-        if (a==="X" && b==="X" && c==="X"){
-        alert("winner")
-    }
+        if (a==="X" && b==="X" && c==="X")
+        console.log("winner")
+    
 }
 
     
@@ -159,4 +171,4 @@
         //else if player one has won 2 rounds then 
             //console.log (player 1 won)
         //else if player 2 has won 2 rounds then
-            //console.log(player 2 won)
+            //console.log(player 2 won)*/
