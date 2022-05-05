@@ -77,12 +77,78 @@
     }
 
 //define board as an array so that each index can be read for placement of X or O
+let winMessage= document.querySelector(".winText")
 
-function winFunc() {
+function rowOne() {
  
-    // Setting DOM to all boxes or input field
-    let winMessage= document.querySelector(".winText")
+    
     let box1 = document.getElementById("box1");
+    let box2 = document.getElementById("box2");
+    let box3 = document.getElementById("box3");
+    
+   if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
+         console.log("winner");
+   }
+} 
+function rowTwo(){
+    let box4 = document.getElementById("box4");
+    let box5 = document.getElementById("box5");
+    let box6 = document.getElementById("box6");
+    
+    if (box4.innerText===box5.innerText && box5.innerText===box6.innerText){
+        console.log("winner");
+     }
+}
+function rowThree(){
+    let box7 = document.getElementById("box7");
+    let box8 = document.getElementById("box8");
+    let box9 = document.getElementById("box9");
+    if (box7.innerText===box8.innerText && box8.innerText===box9.innerText){
+        console.log("winner");
+     }
+}
+function colOne(){
+    let box1 = document.getElementById("box1");
+    let box4 = document.getElementById("box4");
+    let box7 = document.getElementById("box7");
+    if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
+        console.log("winner");
+    }
+}
+
+//function colTwo
+//function colThree
+//function diagOne
+//function diagThree
+   //diabled is not working properly. add in css?
+   /*else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
+        console.log("winner");
+   }
+   else if (box2.innerText===box5.innerText && box5.innerText===box8.innerText){
+        console.log("winner");
+   }
+   else if (box3.innerText===box6.innerText && box6.innerText===box9.innerText){
+   console.log("winner");
+   }
+   else if (box4.innerText===box5.innerText && box5.innerText===box6.innerText){
+      console.log("winner");
+   }
+   else if (box7.innerText===box8.innerText && box8.innerText===box9.innerText){
+      console.log("winner");
+   }
+   else if (box1.innerText===box5.innerText && box5.innerText===box9.innerText){
+      console.log("winner");
+   }
+   else if (box3.innerText===box5.innerText && box5.innerText===box7.innerText){
+      console.log("winner");
+   }
+} */
+
+
+
+
+
+/*let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
     let box4 = document.getElementById("box4");
@@ -90,31 +156,7 @@ function winFunc() {
     let box6 = document.getElementById("box6");
     let box7 = document.getElementById("box7");
     let box8 = document.getElementById("box8");
-    let box9 = document.getElementById("box9");
-    
-   if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
-      winMessage.innerHTML="Player X Won!";
-      box4.disabled=true;
-      box5.diabled=true;
-      box6.disabled=true;
-      box7.diabled=true;
-      box8.disabled=true;
-      box9.disbaled=true;
-   }
-   //diabled is not working properly. add in css?
-   else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
-    winMessage.innerHTML="Player X Won!";
-   }
-   
-} 
-
-
-
-
-
-
-
-
+    let box9 = document.getElementById("box9");*/
 
 
 
