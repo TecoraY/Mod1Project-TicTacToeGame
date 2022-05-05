@@ -17,62 +17,63 @@
         <h1 class="title">Tic Tac Toe</h1>
         <!----winner announcement-->
         <div class="winTag">
-            <h1 class="winText"></h1>
+            <h1 class="player">Let's Play </h1>
+            <h1 class="winText"> </h1>
         </div>
         <!---make a grid------>
         <div class="gridContainer">
             <div class="tiles" id="box1"data-cell-index='0' >
-                <button class="btnx" id="btnx1" onclick="displayX();rowOne();colOne();diagOne();">X</button>
+                <button class="btnx" id="btnx1" onclick="displayX();rowOne();colOne();diagOne();playerX();">X</button>
                 <h1 class="writeX">X</h1>
-                <button class="btno" id="btno1" onclick="displayO();rowOne();colOne();diagOne();">O</button>
+                <button class="btno" id="btno1" onclick="displayO();rowOne();colOne();diagOne();playerO();">O</button>
                 <h1 class="writeO">O</h1>
             </div>
             <div class="tiles" id="box2"data-cell-index='1'>
-                <button class="btnx" id="btnx2" onclick="displayX2();rowOne();colTwo();">X</button>
+                <button class="btnx" id="btnx2" onclick="displayX2();rowOne();colTwo();playerX();">X</button>
                 <h1 class="writeX2" >X</h1>
-                <button class="btno" id="btno2" onclick="displayO2();rowOne();colTwo();">O</button>
+                <button class="btno" id="btno2" onclick="displayO2();rowOne();colTwo();playerO();">O</button>
                 <h1 class="writeO2">O</h1>
             </div>
             <div class="tiles" id="box3"data-cell-index='2'>
-                <button class="btnx" id="btnx3" onclick="displayX3();rowOne();colThree();diagThree();">X</button>
+                <button class="btnx" id="btnx3" onclick="displayX3();rowOne();colThree();diagThree();playerX();">X</button>
                 <h1 class="writeX3">X</h1>
-                <button class="btno"id="btno3" onclick="displayO3();rowOne();colThree();diagThree();">O</button>
+                <button class="btno"id="btno3" onclick="displayO3();rowOne();colThree();diagThree();playerO();">O</button>
                 <h1 class="writeO3">O</h1>
             </div>
             <div class="tiles" id="box4"data-cell-index='3'>
-                <button class="btnx" id="btnx4" onclick="displayX4();rowTwo();colOne();">X</button>
+                <button class="btnx" id="btnx4" onclick="displayX4();rowTwo();colOne();playerX();">X</button>
                 <h1 class="writeX4">X</h1>
-                <button class="btno" id="btno4" onclick="displayO4();rowTwo();colOne();">O</button>
+                <button class="btno" id="btno4" onclick="displayO4();rowTwo();colOne();playerO();">O</button>
                 <h1 class="writeO4">O</h1>
             </div>
             <div class="tiles" id="box5"data-cell-index='4'>
-                <button class="btnx" id="btnx5" onclick="displayX5();rowTwo();colTwo();diagOne();diagThree();">X</button>
+                <button class="btnx" id="btnx5" onclick="displayX5();rowTwo();colTwo();diagOne();diagThree();playerX();">X</button>
                 <h1 class="writeX5">X</h1>
-                <button class="btno"id="btno5" onclick="displayO5();rowTwo();colTwo();diagOne();diagThree();">O</button>
+                <button class="btno"id="btno5" onclick="displayO5();rowTwo();colTwo();diagOne();diagThree();playerO();">O</button>
                 <h1 class="writeO5">O</h1>
             </div>
             <div class="tiles" id="box6"data-cell-index='5'>
-                <button class="btnx" id="btnx6" onclick="displayX6();rowTwo();colThree();">X</button>
+                <button class="btnx" id="btnx6" onclick="displayX6();rowTwo();colThree();playerX();">X</button>
                 <h1 class="writeX6">X</h1>
-                <button class="btno"id="btno6" onclick="displayO6();rowTwo();colThree();">O</button>
+                <button class="btno"id="btno6" onclick="displayO6();rowTwo();colThree();playerO();">O</button>
                 <h1 class="writeO6">O</h1>
             </div>
             <div class="tiles" id="box7" data-cell-index='6'>
-                <button class="btnx" id="btnx7"onclick="displayX7();rowThree();colOne();diagThree();">X</button>
+                <button class="btnx" id="btnx7"onclick="displayX7();rowThree();colOne();diagThree()playerX();">X</button>
                 <h1 class="writeX7">X</h1>
-                <button class="btno" id="btno7"onclick="displayO7();rowThree();colOne();diagThree();">O</button>
+                <button class="btno" id="btno7"onclick="displayO7();rowThree();colOne();diagThree();playerO();">O</button>
                 <h1 class="writeO7">O</h1>
             </div>
             <div class="tiles" id="box8" data-cell-index="7">
-                <button class="btnx" id="btnx8" onclick="displayX8();rowThree();colTwo();">X</button>
+                <button class="btnx" id="btnx8" onclick="displayX8();rowThree();colTwo();playerX();">X</button>
                 <h1 class="writeX8">X</h1>
-                <button class="btno"id="btno8" onclick="displayO8();rowThree();colTwo();">O</button>
+                <button class="btno"id="btno8" onclick="displayO8();rowThree();colTwo();playerO();">O</button>
                 <h1 class="writeO8">O</h1>
             </div>
             <div class="tiles" id="box9" data-cell-index="8">
-                <button class="btnx" id="btnx9" onclick="displayX9();rowThree();colThree();diagOne();">X</button>
+                <button class="btnx" id="btnx9" onclick="displayX9();rowThree();colThree();diagOne();playerX();">X</button>
                 <h1 class="writeX9">X</h1>
-                <button class="btno" id="btno9" onclick="displayO9();rowThree();colThree();diagOne();">O</button>
+                <button class="btno" id="btno9" onclick="displayO9();rowThree();colThree();diagOne();playerO();">O</button>
                 <h1 class="writeO9">O</h1>
             </div>
         </div>

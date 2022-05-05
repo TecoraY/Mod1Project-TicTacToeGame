@@ -86,22 +86,19 @@
         
     }
 }*/
+const winner= document.querySelector('.winText');
+//const playerO= document.querySelector(".playerO");
 
-function rowOne() {
- 
-    
+const player=document.querySelector('.player'); 
+
+    function rowOne() {
     let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
-    let textx=document.querySelector('.writeX');
-    let texto=document.querySelector('.writeo');
+   // let texto=document.querySelector('.writeo').innerText;
    if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
-         console.log("winner");
-         if (box1===textx){
-             console.log("Player X wins");
-        }else{
-             console.log("player O wins");
-           }
+        winner.innerText="YOU WON!" ;
+            
     }             
 }
 function rowTwo(){
@@ -109,7 +106,7 @@ function rowTwo(){
     let box5 = document.getElementById("box5");
     let box6 = document.getElementById("box6");
     if (box4.innerText===box5.innerText && box5.innerText===box6.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
      }
 }
 function rowThree(){
@@ -117,7 +114,7 @@ function rowThree(){
     let box8 = document.getElementById("box8");
     let box9 = document.getElementById("box9");
     if (box7.innerText===box8.innerText && box8.innerText===box9.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
      }
 }
 function colOne(){
@@ -125,7 +122,7 @@ function colOne(){
     let box4 = document.getElementById("box4");
     let box7 = document.getElementById("box7");
     if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
     }
 }
 function colTwo(){
@@ -133,7 +130,7 @@ function colTwo(){
     let box5 = document.getElementById("box5");
     let box8 = document.getElementById("box8");
     if (box2.innerText===box5.innerText && box5.innerText===box8.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
    }
 }
 function colThree(){
@@ -141,7 +138,7 @@ function colThree(){
     let box6 = document.getElementById("box6");
     let box9 = document.getElementById("box9");
     if (box3.innerText===box6.innerText && box6.innerText===box9.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
     }
 }
 
@@ -150,7 +147,7 @@ function diagOne(){
     let box5 = document.getElementById("box5");
     let box9 = document.getElementById("box9");
     if (box1.innerText===box5.innerText && box5.innerText===box9.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
     }
 }
 
@@ -159,7 +156,7 @@ function diagThree(){
     let box5 = document.getElementById("box5");
     let box7 = document.getElementById("box7");
     if (box3.innerText===box5.innerText && box5.innerText===box7.innerText){
-        console.log("winner");
+        winner.innerText="YOU WON!";
     }
 }
    //diabled is not working properly. add in css?
