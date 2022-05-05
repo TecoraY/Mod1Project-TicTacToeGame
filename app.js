@@ -77,7 +77,15 @@
     }
 
 //define board as an array so that each index can be read for placement of X or O
-let winMessage= document.querySelector(".winText")
+/*function winMessage(){
+    const btnX= document.querySelectorAll(".btnX")
+    const playerX=btnX.getAttribute("class")
+    const btnO= document.querySelectorAll(".btno")
+    const playerO= btnO.getAttribute("class")
+    if (rowOne){
+        
+    }
+}*/
 
 function rowOne() {
  
@@ -85,16 +93,21 @@ function rowOne() {
     let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
-    
+    let textx=document.querySelector('.writeX');
+    let texto=document.querySelector('.writeo');
    if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
          console.log("winner");
-   }
-} 
+         if (box1===textx){
+             console.log("Player X wins");
+        }else{
+             console.log("player O wins");
+           }
+    }             
+}
 function rowTwo(){
     let box4 = document.getElementById("box4");
     let box5 = document.getElementById("box5");
     let box6 = document.getElementById("box6");
-    
     if (box4.innerText===box5.innerText && box5.innerText===box6.innerText){
         console.log("winner");
      }
