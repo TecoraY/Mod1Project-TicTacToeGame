@@ -15,64 +15,68 @@
     <body>
         <!---Tic Tac Toe title--------->
         <h1 class="title">Tic Tac Toe</h1>
-
+        <!----winner announcement-->
+        <div class="winTag">
+            <h1 class="winText"></h1>
+        </div>
         <!---make a grid------>
         <div class="gridContainer">
             <div class="tiles" id="box1"data-cell-index='0'>
                 <button class="btnx" id="btnx1" onclick="displayX();winFunc();">X</button>
                 <h1 class="writeX">X</h1>
-                <button class="btno" id="btno1" onclick="displayO()">O</button>
+                <button class="btno" id="btno1" onclick="displayO();winFunc();">O</button>
                 <h1 class="writeO">O</h1>
             </div>
             <div class="tiles" id="box2"data-cell-index='1'>
                 <button class="btnx" id="btnx2" onclick="displayX2();winFunc(); ">X</button>
                 <h1 class="writeX2" >X</h1>
-                <button class="btno" id="btno2" onclick="displayO2()">O</button>
+                <button class="btno" id="btno2" onclick="displayO2();winFunc();">O</button>
                 <h1 class="writeO2">O</h1>
             </div>
             <div class="tiles" id="box3"data-cell-index='2'>
                 <button class="btnx" id="btnx3" onclick="displayX3();winFunc(); ">X</button>
                 <h1 class="writeX3">X</h1>
-                <button class="btno"id="btno3" onclick="displayO3()">O</button>
+                <button class="btno"id="btno3" onclick="displayO3();winFunc();">O</button>
                 <h1 class="writeO3">O</h1>
             </div>
             <div class="tiles" id="box4"data-cell-index='3'>
-                <button class="btnx" onclick="displayX4()">X</button>
+                <button class="btnx" onclick="displayX4();winFunc();">X</button>
                 <h1 class="writeX4">X</h1>
-                <button class="btno" id="btno4" onclick="displayO4()">O</button>
+                <button class="btno" id="btno4" onclick="displayO4();winFunc();">O</button>
                 <h1 class="writeO4">O</h1>
             </div>
             <div class="tiles" id="box5"data-cell-index='4'>
-                <button class="btnx" onclick="displayX5()">X</button>
+                <button class="btnx" onclick="displayX5();winFunc();">X</button>
                 <h1 class="writeX5">X</h1>
-                <button class="btno"id="btno5" onclick="displayO5()">O</button>
+                <button class="btno"id="btno5" onclick="displayO5();winFunc();">O</button>
                 <h1 class="writeO5">O</h1>
             </div>
             <div class="tiles" id="box6"data-cell-index='5'>
-                <button class="btnx" onclick="displayX6()">X</button>
+                <button class="btnx" onclick="displayX6();winFunc();">X</button>
                 <h1 class="writeX6">X</h1>
-                <button class="btno"id="btno6" onclick="displayO6()">O</button>
+                <button class="btno"id="btno6" onclick="displayO6();winFunc();">O</button>
                 <h1 class="writeO6">O</h1>
             </div>
             <div class="tiles" id="box7" data-cell-index='6'>
-                <button class="btnx" onclick="displayX7()">X</button>
+                <button class="btnx" onclick="displayX7();winFunc();">X</button>
                 <h1 class="writeX7">X</h1>
-                <button class="btno"id="btno7"onclick="displayO7()">O</button>
+                <button class="btno"id="btno7"onclick="displayO7();winFunc();">O</button>
                 <h1 class="writeO7">O</h1>
             </div>
             <div class="tiles" id="box8" data-cell-index="7">
-                <button class="btnx" onclick="displayX8()">X</button>
+                <button class="btnx" onclick="displayX8();winFunc();">X</button>
                 <h1 class="writeX8">X</h1>
-                <button class="btno"id="btno8" onclick="displayO8()">O</button>
+                <button class="btno"id="btno8" onclick="displayO8();winFunc();">O</button>
                 <h1 class="writeO8">O</h1>
             </div>
             <div class="tiles" id="box9" data-cell-index="8">
-                <button class="btnx" onclick="displayX9()">X</button>
+                <button class="btnx" onclick="displayX9();winFunc();">X</button>
                 <h1 class="writeX9">X</h1>
-                <button class="btno" id="btno9" onclick="displayO9()">O</button>
+                <button class="btno" id="btno9" onclick="displayO9();winFunc();">O</button>
                 <h1 class="writeO9">O</h1>
             </div>
         </div>
+       
 
 
        <!------<img src="https://th.bing.com/th/id/R.ec021608e851e893da1e8531fa498247?rik=N8F0Eo0aBDmS0A&riu=http%3a%2f%2fwww.pngall.com%2fwp-content%2fuploads%2f5%2fX-Letter-PNG-Image.png&ehk=YJKm7xXwZzGrosZTK5Psk5jGrO46tKykqARB309XEAQ%3d&risl=&pid=ImgRaw&r=0" alt="" class="x">

@@ -27,17 +27,11 @@
 #box3, #box6, #box9{
     border-right: none;
 }
-.writeX, .writeX2, .writeX3{
+.writeX, .writeX2, .writeX3, .writeX4,.writeX5,.writeX6,.writeX7,.writeX8,.writeX9{
     display:none;
 }
-.writeO,.writeO2,.writeO3{
+.writeO,.writeO2,.writeO3,.writeO4,.writeO5,.writeO6,.writeO7,.writeO8,.writeO9{
     display:none;
-}
-.o,.o2,.o3,.o4,.o5,.o6,.o7,.o8,.o9{
-    display: none;
-}
-.x,.x2,.x3,.x4,.x5,.x6,.x7,.x8,.x9{
-    display: none;
 }
 .initiateX{
     display: unset ;

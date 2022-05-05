@@ -16,85 +16,112 @@
         
     }
     const displayX4= () =>{
-        let pickX= document.querySelector('.x4')
+        let pickX= document.querySelector('.writeX4')
         pickX.classList.toggle('initiateX')
     }
     const displayX5= () =>{
-        let pickX= document.querySelector('.x5')
+        let pickX= document.querySelector('.writeX5')
         pickX.classList.toggle('initiateX')
     }
     const displayX6= () =>{
-        let pickX= document.querySelector('.x6')
+        let pickX= document.querySelector('.writeX6')
         pickX.classList.toggle('initiateX')
     }
     const displayX7= () =>{
-        let pickX= document.querySelector('.x7')
+        let pickX= document.querySelector('.writeX7')
         pickX.classList.toggle('initiateX')
     }
     const displayX8= () =>{
-        let pickX= document.querySelector('.x8')
+        let pickX= document.querySelector('.writeX8')
         pickX.classList.toggle('initiateX')
     }
     const displayX9= () =>{
-        let pickX= document.querySelector('.x9')
+        let pickX= document.querySelector('.writeX9')
         pickX.classList.toggle('initiateX')
     }
     const displayO= () =>{
-        let pickO= document.querySelector('.o')
+        let pickO= document.querySelector('.writeO')
         pickO.classList.toggle('initiateO')
     }
     const displayO2= () =>{
-        let pickO= document.querySelector('.o2')
+        let pickO= document.querySelector('.writeO2')
         pickO.classList.toggle('initiateO')
     }
     const displayO3= () =>{
-        let pickO= document.querySelector('.o3')
+        let pickO= document.querySelector('.writeO3')
         pickO.classList.toggle('initiateO')
     }
     const displayO4= () =>{
-        let pickO= document.querySelector('.o4')
+        let pickO= document.querySelector('.writeO4')
         pickO.classList.toggle('initiateO')
     }
     const displayO5= () =>{
-        let pickO= document.querySelector('.o5')
+        let pickO= document.querySelector('.writeO5')
         pickO.classList.toggle('initiateO')
     }
     const displayO6= () =>{
-        let pickO= document.querySelector('.o6')
+        let pickO= document.querySelector('.writeO6')
         pickO.classList.toggle('initiateO')
     }
     const displayO7= () =>{
-        let pickO= document.querySelector('.o7')
+        let pickO= document.querySelector('.writeO7')
         pickO.classList.toggle('initiateO')
     }
     const displayO8= () =>{
-        let pickO= document.querySelector('.o8')
+        let pickO= document.querySelector('.writeO8')
         pickO.classList.toggle('initiateO')
     }
     const displayO9= () =>{
-        let pickO= document.querySelector('.o9')
+        let pickO= document.querySelector('.writeO9')
         pickO.classList.toggle('initiateO')
     }
 
 //define board as an array so that each index can be read for placement of X or O
+
 function winFunc() {
  
     // Setting DOM to all boxes or input field
-    
+    let winMessage= document.querySelector(".winText")
     let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
-   /* let b4 = document.getElementById("b4").value;
-    let b5 = document.getElementById("b5").value;
-    let b6 = document.getElementById("b6").value;
-    let b7 = document.getElementById("b7").value;
-    let b8 = document.getElementById("b8").value;
-    let b9 = document.getElementById("b9").value;*/
+    let box4 = document.getElementById("box4");
+    let box5 = document.getElementById("box5");
+    let box6 = document.getElementById("box6");
+    let box7 = document.getElementById("box7");
+    let box8 = document.getElementById("box8");
+    let box9 = document.getElementById("box9");
     
    if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
-       console.log("winner")
+      winMessage.innerHTML="Player X Won!";
+      box4.disabled=true;
+      box5.diabled=true;
+      box6.disabled=true;
+      box7.diabled=true;
+      box8.disabled=true;
+      box9.disbaled=true;
    }
+   //diabled is not working properly. add in css?
+   else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
+    winMessage.innerHTML="Player X Won!";
+   }
+   
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /* if (btnX1==btnX2){
         console.log("winner")
     }
