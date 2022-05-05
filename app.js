@@ -115,11 +115,40 @@ function colOne(){
         console.log("winner");
     }
 }
+function colTwo(){
+    let box2 = document.getElementById("box2");
+    let box5 = document.getElementById("box5");
+    let box8 = document.getElementById("box8");
+    if (box2.innerText===box5.innerText && box5.innerText===box8.innerText){
+        console.log("winner");
+   }
+}
+function colThree(){
+    let box3 = document.getElementById("box3");
+    let box6 = document.getElementById("box6");
+    let box9 = document.getElementById("box9");
+    if (box3.innerText===box6.innerText && box6.innerText===box9.innerText){
+        console.log("winner");
+    }
+}
 
-//function colTwo
-//function colThree
-//function diagOne
-//function diagThree
+function diagOne(){
+    let box1 = document.getElementById("box1");
+    let box5 = document.getElementById("box5");
+    let box9 = document.getElementById("box9");
+    if (box1.innerText===box5.innerText && box5.innerText===box9.innerText){
+        console.log("winner");
+    }
+}
+
+function diagThree(){
+    let box3 = document.getElementById("box3");
+    let box5 = document.getElementById("box5");
+    let box7 = document.getElementById("box7");
+    if (box3.innerText===box5.innerText && box5.innerText===box7.innerText){
+        console.log("winner");
+    }
+}
    //diabled is not working properly. add in css?
    /*else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
         console.log("winner");
