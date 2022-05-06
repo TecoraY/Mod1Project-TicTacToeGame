@@ -1,9 +1,27 @@
 /* style of the grid to be 3 by 3.*/
-
+body{
+    background-color: aqua;
+}
 .title{
     color:goldenrod;
     text-align: center;
     font-size: 50px;
+    font-family: monospace;
+    text-decoration: underline;
+}
+.playero{
+    display:none;
+}
+.playerx{
+    display: none;
+}
+.initiatepo{
+    display: unset;
+    font-family:'Times New Roman', Times, serif;
+}
+.initiatepx{
+    display:unset;
+    font-family:'Times New Roman', Times, serif;
 }
 .gridContainer{
     display: grid;
@@ -19,15 +37,22 @@
 }
 #box1,#box2,#box3{
     border-top: none;
+    border-color: goldenrod;
 }
 #box1, #box4, #box7{
     border-left: none;
+    border-color: goldenrod;
 }
 #box7, #box8, #box9{
     border-bottom:none;
+    border-color: goldenrod;
 }
 #box3, #box6, #box9{
     border-right: none;
+    border-color: goldenrod;
+}
+#box5{
+    border-color: goldenrod;
 }
 .writeX, .writeX2, .writeX3, .writeX4,.writeX5,.writeX6,.writeX7,.writeX8,.writeX9{
     display:none;
@@ -43,12 +68,23 @@
 }
 .winTag{
     display:flex;
-    justify-content: space-between 10px;
-    text-align: center;
+    color: goldenrod;
 }
 .btnx,.btno{
     text-align: center;
     display: inline-block;
     font-size:20px;
+    background-color: aqua;
+    border-radius: 25%;
+    height: 30px;
 }
+.gameInfo{
+    display:none;
+}
+.initiateInfo{
+    display:unset;
+    color: goldenrod;
+    font-family:'Times New Roman', Times, serif;
+}
+
 /* hide the image of x and O in the grid behind a blank box?*/

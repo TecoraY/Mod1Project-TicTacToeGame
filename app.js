@@ -2,90 +2,122 @@
 //if x button or O button pressed
     //on click function=>
     //document.queryselector for images
+    alert ("Welcome to TicTacToe. This is a two-player game. Player one is'X' and player two is 'O'. Simply choose a box and press your corresponding button. The first to get 3 in a row, column, or diagonal wins! Let's begin!")
+    const gameInstructions=()=>{
+        let gameInfo=document.querySelector('.gameInfo')
+        gameInfo.classList.toggle('initiateInfo')
+    }
+    /*const playerX= ()=>{
+        let showX=document.querySelector('.playerx')
+        showX.classList.toggle('initiatePlayerX')
+    }*/
+    /*const playerO=()=>{
+        let showO=document.querySelector('.playero')
+        showO.classList.toggle('initiatePlayerO')
+    }*/
     const displayX= () =>{
-        let pickX= document.querySelector('.writeX')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX2= () =>{
-        let pickX= document.querySelector('.writeX2')
-        pickX.classList.toggle('initiateX')  
+        let pickX= document.querySelector('.writeX2');
+        pickX.classList.toggle('initiateX');
+           
     }
     const displayX3= () =>{
-        let pickX= document.querySelector('.writeX3')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX3');
+        pickX.classList.toggle('initiateX');
+         
         
     }
     const displayX4= () =>{
-        let pickX= document.querySelector('.writeX4')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX4');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX5= () =>{
-        let pickX= document.querySelector('.writeX5')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX5');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX6= () =>{
-        let pickX= document.querySelector('.writeX6')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX6');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX7= () =>{
-        let pickX= document.querySelector('.writeX7')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX7');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX8= () =>{
-        let pickX= document.querySelector('.writeX8')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX8');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayX9= () =>{
-        let pickX= document.querySelector('.writeX9')
-        pickX.classList.toggle('initiateX')
+        let pickX= document.querySelector('.writeX9');
+        pickX.classList.toggle('initiateX');
+         
     }
     const displayO= () =>{
-        let pickO= document.querySelector('.writeO')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO2= () =>{
-        let pickO= document.querySelector('.writeO2')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO3= () =>{
-        let pickO= document.querySelector('.writeO3')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO4= () =>{
-        let pickO= document.querySelector('.writeO4')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO5= () =>{
-        let pickO= document.querySelector('.writeO5')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO6= () =>{
-        let pickO= document.querySelector('.writeO6')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO7= () =>{
-        let pickO= document.querySelector('.writeO7')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO8= () =>{
-        let pickO= document.querySelector('.writeO8')
-        pickO.classList.toggle('initiateO')
-    }
-    const displayO9= () =>{
-        let pickO= document.querySelector('.writeO9')
-        pickO.classList.toggle('initiateO')
-    }
-
-//define board as an array so that each index can be read for placement of X or O
-/*function winMessage(){
-    const btnX= document.querySelectorAll(".btnX")
-    const playerX=btnX.getAttribute("class")
-    const btnO= document.querySelectorAll(".btno")
-    const playerO= btnO.getAttribute("class")
-    if (rowOne){
+        let pickO= document.querySelector('.writeO');
+        pickO.classList.toggle('initiateO');
         
     }
-}*/
+    const displayO2= () =>{
+        let pickO= document.querySelector('.writeO2');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO3= () =>{
+        let pickO= document.querySelector('.writeO3');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO4= () =>{
+        let pickO= document.querySelector('.writeO4');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO5= () =>{
+        let pickO= document.querySelector('.writeO5');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO6= () =>{
+        let pickO= document.querySelector('.writeO6');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO7= () =>{
+        let pickO= document.querySelector('.writeO7');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO8= () =>{
+        let pickO= document.querySelector('.writeO8');
+        pickO.classList.toggle('initiateO');
+        
+    }
+    const displayO9= () =>{
+        let pickO= document.querySelector('.writeO9');
+        pickO.classList.toggle('initiateO');
+    }
+function playerO(){
+    let showO=document.querySelector('.playero');
+    showO.classList.toggle('initiatepo');
+}
+function playerX(){
+    let showX=document.querySelector('.playerx');
+    showX.classList.toggle('initiatepx');
+}
+
+
+
+
+
 const winner= document.querySelector('.winText');
 //const playerO= document.querySelector(".playerO");
 
