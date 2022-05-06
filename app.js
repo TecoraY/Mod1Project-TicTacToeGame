@@ -2,19 +2,27 @@
 //if x button or O button pressed
     //on click function=>
     //document.queryselector for images
-    alert ("Welcome to TicTacToe. This is a two-player game. Player one is'X' and player two is 'O'. Simply choose a box and press your corresponding button. The first to get 3 in a row, column, or diagonal wins! Let's begin!")
+    alert ("Welcome to TicTacToe. This is a two-player game. Player one is'X' and player two is 'O'. Simply choose a box and press your corresponding button. The first to get 3 in a row, column, or diagonal wins that round. The best of 5 wins! Remember to track your score at the bottom of the page! Let's begin!")
     const gameInstructions=()=>{
         let gameInfo=document.querySelector('.gameInfo')
         gameInfo.classList.toggle('initiateInfo')
     }
-    /*const playerX= ()=>{
-        let showX=document.querySelector('.playerx')
-        showX.classList.toggle('initiatePlayerX')
-    }*/
-    /*const playerO=()=>{
-        let showO=document.querySelector('.playero')
-        showO.classList.toggle('initiatePlayerO')
-    }*/
+   
+
+    const playerX= ()=>{
+        let showX=document.querySelector('.playerx');
+        showX.classList.toggle('initiatepx');
+    }
+    const playerO=()=>{
+        let showO=document.querySelector('.playero');
+        showO.classList.toggle('initiatepo');
+    }
+    
+    
+    
+    
+    
+    
     const displayX= () =>{
         let pickX= document.querySelector('.writeX');
         pickX.classList.toggle('initiateX');
@@ -105,22 +113,17 @@
         let pickO= document.querySelector('.writeO9');
         pickO.classList.toggle('initiateO');
     }
-function playerO(){
+/*function playerO(){
     let showO=document.querySelector('.playero');
     showO.classList.toggle('initiatepo');
 }
 function playerX(){
     let showX=document.querySelector('.playerx');
     showX.classList.toggle('initiatepx');
-}
-
-
-
-
+}*/
 
 const winner= document.querySelector('.winText');
 //const playerO= document.querySelector(".playerO");
-
 /*let buttonO= document.querySelector(".btno");
 let playerX=document.querySelector('.player');
 let playerO=document.querySelector ('.playerO');
@@ -225,35 +228,7 @@ function tie(){
             console.log("tie")
         }
 }
-   //diabled is not working properly. add in css?
-   /*else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){
-        console.log("winner");
-   }
-   else if (box2.innerText===box5.innerText && box5.innerText===box8.innerText){
-        console.log("winner");
-   }
-   else if (box3.innerText===box6.innerText && box6.innerText===box9.innerText){
-   console.log("winner");
-   }
-   else if (box4.innerText===box5.innerText && box5.innerText===box6.innerText){
-      console.log("winner");
-   }
-   else if (box7.innerText===box8.innerText && box8.innerText===box9.innerText){
-      console.log("winner");
-   }
-   else if (box1.innerText===box5.innerText && box5.innerText===box9.innerText){
-      console.log("winner");
-   }
-   else if (box3.innerText===box5.innerText && box5.innerText===box7.innerText){
-      console.log("winner");
-   }
-} */
-
-
-
-
-
-/*let box1 = document.getElementById("box1");
+/*box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
     let box4 = document.getElementById("box4");
@@ -262,56 +237,64 @@ function tie(){
     let box7 = document.getElementById("box7");
     let box8 = document.getElementById("box8");
     let box9 = document.getElementById("box9");*/
-
-
-
-
-
-
-
-    /* if (btnX1==btnX2){
-        console.log("winner")
-    }
-}*/
-
-
-
-
-
-
-
-
-
-    //define O and X
-const oMark= "O";
-const xMark= "X";
-console.log("hello");
-/*winningOptions();
-
-function winningOptions(){
-    const xBox1=document.querySelector(".writeX");
-    const xBox2=document.querySelector(".writeX2");
-    const xBox3=document.querySelector(".writeX3");
-    let a=xBox1;
-    let b=xBox2;
-    let c=xBox3;
-        if (a==="X" && b==="X" && c==="X"){
-        console.log("winner");
-        }
-}*/
-
     
 /////--------------------------------------------------------------------------------------------------------------------------------------------------//////
-   
-   
-   
-   
-    //how to let the computer know that 3 of the images are aligned diagnoally, horizontally, or vertically?
-    //research possible ways to represent this in a function.
-    //have to make an array of all possible winning combinations. Once have an array of the combinations then this must be applied to x and o or else draw. 
-    //array should be an array of positions in the grid inhabited by a visble X or O. 
+let pxButton=document.querySelector('.addX');
+let poButton=document.querySelector('.addO');
+let reset= document.querySelector('.reset');
+let tieButton=document.querySelector('.tiebtn');
+let xScore=0;
+let oScore=0;
+let tieScore=0;
+let xNumber=document.querySelector('.xnumber');
+let oNumber=document.querySelector('.onumber');
+let tieNumber=document.querySelector('.tietally');
+let gameOver= false;
+let winScore= 5;
+let overAnnounce=document.querySelector('.player');
 
-    //functionlogic:
+pxButton.addEventListener("click", function(){
+    if (!gameOver){
+        xScore++;
+        if (xScore===winScore){
+            gameOver=true;
+            if(gameOver===true){
+                overAnnounce.textContent="GAME OVER"
+            }
+        }
+        xNumber.textContent=xScore;
+    } 
+});
+poButton.addEventListener("click", function(){
+    if (!gameOver){
+        oScore++;
+        if (oScore===winScore){
+            gameOver=true
+            if(gameOver===true){
+                overAnnounce.textContent="GAME OVER"
+            }
+        }
+    oNumber.textContent=oScore;
+    }
+});
+tieButton.addEventListener("click", function(){
+    tieScore++;
+    tieNumber.textContent=tieScore;
+});
+
+    
+
+
+
+
+
+
+
+
+
+
+
+//functionlogic:
         //if player one gets 3 in a row , diaganol, or column
             //then move on to score function
         //else if player 2 gets 3 ina row, diaganol, or column
@@ -322,13 +305,6 @@ function winningOptions(){
         //const imgo= "https://th.bing.com/th/id/R.b85f668ba966a277c5ad5ea977a3fab2?rik=XDE7DA6wO0ORZg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fletter-o-png-letter-o-capital-letter-alphabet-abc-gold-723.png&ehk=pjFwNzQKtd4VZGCkIOPPUy0UcNgIveDC5lqYIvVxQLA%3d&risl=&pid=ImgRaw&r=0"
         //let x= imgx
         //let o= imgo
-
-        
-        
-        
-
-     
-        
 
 
     //score to populate.
@@ -346,14 +322,6 @@ function winningOptions(){
             
             //else if neither player 2 or 1 gets 3 in a row 
             //then there has been a tie. 
-
-
-
-
-
-
-
-
 
     // who wins?
     // if the score is 2 to 1 or 2 wins and 1 tie then the person with 2 wins will win the game.

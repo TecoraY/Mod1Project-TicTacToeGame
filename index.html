@@ -21,13 +21,12 @@
         
         </div>
         <div class="players">
-            <h1 class="playero"onclick="playerO()"> Player O </h1>
-            <h1 class="playerx"onclick="playerX()"> PlayerX </h1>
+            <h1><span class="playerx"> Player X</span><span class="playero"> Player O</span></h1>
             <h1 class="winText"> </h1>
         </div>
         <div class="gameInstr">
             <button class="alert" onclick="gameInstructions()">Game Instructions</button>
-            <h1 class="gameInfo">"Welcome to TicTacToe. This is a two-player game. Player one is'X' and player two is 'O'. Simply choose a box and press your corresponding button. The first to get 3 in a row, column, or diagonal wins! Let's begin!"</h1>
+            <h1 class="gameInfo">"Welcome to TicTacToe. This is a two-player game. Player one is'X' and player two is 'O'. Simply choose a box and press your corresponding button. The first to get 3 in a row, column, or diagonal wins that round! The best of 5 wins! Remember to track your score at the bottom of the page! Let's begin!"</h1>
         </div>
         <!---make a grid------>
         <div class="gridContainer">
@@ -87,7 +86,16 @@
             </div>
         </div>
         
-       
+       <div class="scoreboard">
+           <h3><span class="xnumber">0</span>to <span class="onumber">0</span></h3>
+           <p>Tie:</p><p class="tietally">0</p>
+           <input type="number">
+           <button class="addX">Player X</button>
+           <button class="addO">PlayerO</button>
+           <button class="tiebtn">Tie</button>
+           <input type="reset" value="reset">
+           <p>Best of 5</p>
+       </div>
 
         
         <!----score box div container-->
