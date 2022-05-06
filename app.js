@@ -89,15 +89,30 @@
 const winner= document.querySelector('.winText');
 //const playerO= document.querySelector(".playerO");
 
-const player=document.querySelector('.player'); 
+/*let buttonO= document.querySelector(".btno");
+let playerX=document.querySelector('.player');
+let playerO=document.querySelector ('.playerO');
+let buttonX= document.querySelector('.btnx');
+function clickX(){
+    playerX.innerHTML="PLAYER X-";}
+function clickO(){
+    playerO.innerHTML="PLAYER O-";}
+//buttonX.addEventListener('click', function clickX(){
+    //player.innerHTML="PLAYER X-";
+    buttonX.addEventListener('click',clickX, false);
+    buttonO.addEventListener('click', clickO, true);*/
+    
 
-    function rowOne() {
+
+
+function rowOne() {
     let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
    // let texto=document.querySelector('.writeo').innerText;
    if (box1.innerText===box2.innerText && box2.innerText===box3.innerText){
         winner.innerText="YOU WON!" ;
+
             
     }             
 }
@@ -158,6 +173,25 @@ function diagThree(){
     if (box3.innerText===box5.innerText && box5.innerText===box7.innerText){
         winner.innerText="YOU WON!";
     }
+}
+function tie(){
+    let box1 = document.getElementById("box1");
+    let box2 = document.getElementById("box2");
+    let box3 = document.getElementById("box3");
+    let box4 = document.getElementById("box4");
+    let box5 = document.getElementById("box5");
+    let box6 = document.getElementById("box6");
+    let box7 = document.getElementById("box7");
+    let box8 = document.getElementById("box8");
+    let box9 = document.getElementById("box9");
+    if ((box1 == 'X' || box1 == '0') && (box2 == 'X'
+        || box2 == '0') && (box3 == 'X' || box3 == '0') &&
+        (box4 == 'X' || box4 == '0') && (box5 == 'X' ||
+        box5 == '0') && (box6 == 'X' || box6 == '0') &&
+        (box7 == 'X' || box7 == '0') && (box8 == 'X' ||
+        box8 == '0') && (box9 == 'X' || box9 == '0')) {
+            console.log("tie")
+        }
 }
    //diabled is not working properly. add in css?
    /*else if (box1.innerText===box4.innerText && box4.innerText===box7.innerText){

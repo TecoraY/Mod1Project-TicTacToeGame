@@ -3,12 +3,14 @@
 .title{
     color:goldenrod;
     text-align: center;
+    font-size: 50px;
 }
 .gridContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    padding: 20px;
+    grid-auto-rows: 100px;
+    padding: 50px;
+    margin: 50px
 
 }
 .tiles{
@@ -38,5 +40,15 @@
 }
 .initiateO{
     display: unset;
+}
+.winTag{
+    display:flex;
+    justify-content: space-between 10px;
+    text-align: center;
+}
+.btnx,.btno{
+    text-align: center;
+    display: inline-block;
+    font-size:20px;
 }
 /* hide the image of x and O in the grid behind a blank box?*/
