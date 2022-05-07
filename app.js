@@ -7,15 +7,116 @@
         let gameInfo=document.querySelector('.gameInfo')
         gameInfo.classList.toggle('initiateInfo')
     }
-   
-
-    const playerX= ()=>{
+    
+    let printX= document.querySelector('.playerox')
+    let printO=document.querySelector('.playerox')
+    //btn1
+    let buttonX1= document.getElementById('btnx1')
+    let buttonO1=document.getElementById('btno1')
+    buttonX1.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO1.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn2
+    let buttonX2= document.getElementById('btnx2')
+    let buttonO2=document.getElementById('btno2')
+    buttonX2.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO2.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn3
+    let buttonX3= document.getElementById('btnx3')
+    let buttonO3=document.getElementById('btno3')
+    buttonX3.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO3.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn4
+    let buttonX4= document.getElementById('btnx4')
+    let buttonO4=document.getElementById('btno4')
+    buttonX4.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO4.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn5
+    let buttonX5= document.getElementById('btnx5')
+    let buttonO5=document.getElementById('btno5')
+    buttonX5.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO5.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn6
+    let buttonX6= document.getElementById('btnx6')
+    let buttonO6=document.getElementById('btno6')
+    buttonX6.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO6.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn7
+    let buttonX7= document.getElementById('btnx7')
+    let buttonO7=document.getElementById('btno7')
+    buttonX7.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO7.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn8
+    let buttonX8= document.getElementById('btnx8')
+    let buttonO8=document.getElementById('btno8')
+    buttonX8.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO8.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+    //btn9
+    let buttonX9= document.getElementById('btnx9')
+    let buttonO9=document.getElementById('btno9')
+    buttonX9.addEventListener("click", function (){
+        printX.textContent="Player X";
+        console.log("print player x")
+    })
+    buttonO9.addEventListener("click", function(){
+        printO.textContent="Player O";
+        console.log("print player o")
+    })
+  
+    const playerX2= ()=>{
         let showX=document.querySelector('.playerx');
         showX.classList.toggle('initiatepx');
     }
-    const playerO=()=>{
-        let showO=document.querySelector('.playero');
-        showO.classList.toggle('initiatepo');
+    const playerX3= ()=>{
+        let showX=document.querySelector('.playerx');
+        showX.classList.toggle('initiatepx');
     }
     
     
