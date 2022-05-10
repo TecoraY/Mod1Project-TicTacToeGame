@@ -121,7 +121,7 @@
     
     
     
-    
+    //display player x or o
     
     
     const displayX= () =>{
@@ -214,33 +214,12 @@
         let pickO= document.querySelector('.writeO9');
         pickO.classList.toggle('initiateO');
     }
-/*function playerO(){
-    let showO=document.querySelector('.playero');
-    showO.classList.toggle('initiatepo');
-}
-function playerX(){
-    let showX=document.querySelector('.playerx');
-    showX.classList.toggle('initiatepx');
-}*/
+//win text
 
 const winner= document.querySelector('.winText');
-//const playerO= document.querySelector(".playerO");
-/*let buttonO= document.querySelector(".btno");
-let playerX=document.querySelector('.player');
-let playerO=document.querySelector ('.playerO');
-let buttonX= document.querySelector('.btnx');
-function clickX(){
-    playerX.innerHTML="PLAYER X-";}
-function clickO(){
-    playerO.innerHTML="PLAYER O-";}
-//buttonX.addEventListener('click', function clickX(){
-    //player.innerHTML="PLAYER X-";
-    buttonX.addEventListener('click',clickX, false);
-    buttonO.addEventListener('click', clickO, true);*/
-    
 
 
-
+//win combinations
 function rowOne() {
     let box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
@@ -329,6 +308,7 @@ function tie(){
             console.log("tie")
         }
 }
+//boxes to be selected
 /*box1 = document.getElementById("box1");
     let box2 = document.getElementById("box2");
     let box3 = document.getElementById("box3");
@@ -340,6 +320,7 @@ function tie(){
     let box9 = document.getElementById("box9");*/
     
 /////--------------------------------------------------------------------------------------------------------------------------------------------------//////
+//score box
 let pxButton=document.querySelector('.addX');
 let poButton=document.querySelector('.addO');
 let reset= document.querySelector('.reset');
@@ -394,7 +375,7 @@ tieButton.addEventListener("click", function(){
 
 
 
-
+//game planning
 //functionlogic:
         //if player one gets 3 in a row , diaganol, or column
             //then move on to score function
